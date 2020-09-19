@@ -16,14 +16,20 @@ export default function App() {
     wavFile: 'test.wav' // default 'audio.wav'
   };
   
-  AudioRecord.init(options);
+  // The code that's not working:
+  // Error msg: TypeError: Cannot read property 'init' of undefined
 
-  //Start Recording
-  AudioRecord.start();
+  /*
+    AudioRecord.init(options);
+
+    // Start Recording
+    AudioRecord.start();
+    
+    
+    // Stop Recording
+    AudioRecord.stop();
+  */
   
-  
-  //Stop Recording
-  AudioRecord.stop(); 
 
   return (
     <View style={styles.container}>
